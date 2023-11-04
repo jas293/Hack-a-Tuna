@@ -10,7 +10,7 @@ phases:
 
   build:
     commands:
-      - streamlit build home.py
+      - streamlit run home.py
 
 artifacts:
   files:
