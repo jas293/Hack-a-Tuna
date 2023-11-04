@@ -1,0 +1,19 @@
+version: 0.1
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.10.12
+  pre_build:
+    commands:
+      - pip install -r requirements.txt
+
+  build:
+    commands:
+      - streamlit build home.py
+
+artifacts:
+  files:
+    - home.py
+    - requirements.txt
+  discard-paths: yes
