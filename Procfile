@@ -1,1 +1,0 @@
-web: streamlit run home.py --server.port 8080
