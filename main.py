@@ -11,7 +11,7 @@ from streamlit_folium import folium_static
 from haversine import haversine
 
 st.set_page_config(page_title="Fish Detection", page_icon=":anchor:", layout="wide")
-
+st.title("Hack-a-Tuna")
 page = st.sidebar.selectbox("Navigation", ["Home", "Upload Images", "Find Fish"])
 
 model = keras.models.load_model("fishModel.h5")
