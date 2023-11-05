@@ -18,10 +18,10 @@ model = keras.models.load_model("fishModel.h5")
 
 def connect_database():
     db_config = {
-        "host": "localhost",
-        "user": "root",
-        "password": "7004",
-        "database": "fishdetection",
+        "host": "fishdetectiondb.ckl4wcfkpokh.us-east-1.rds.amazonaws.com",
+        "user": "admin",
+        "password": "rsj2720njit",
+        "database": "fishdetectiondb",
     }
 
     # Create a database connection
