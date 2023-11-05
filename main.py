@@ -51,17 +51,17 @@ def display_images_in_grid(folder_path="images/", num_columns=3):
                 image_name = os.path.splitext(image_file)[0]
                 if image_name is "git_head_bream":
                     image_name = "Gilt Head Bream"
-                else if image_name is "striped_red_mullet":
+                elif image_name is "striped_red_mullet":
                     image_name = "Striped Red Mullet"
-                else if image_name is "Sea_Bass":
+                elif image_name is "Sea_Bass":
                     image_name = "Sea Bass"
-                else if image_name is "red_sea_bream":
+                elif image_name is "red_sea_bream":
                     image_name = "Red Sea Bream"
-                else if image_name is "hourse_mackerel":
+                elif image_name is "hourse_mackerel":
                     image_name = "Hourse Mackerel"
-                else if image_name is "Red_Mullet":
+                elif image_name is "Red_Mullet":
                     image_name = "Red Mullet"
-                else if image_name is "black_sea_sprat":
+                elif image_name is "black_sea_sprat":
                     image_name = "Black Sea Sprat"
                 columns[j].image(image_path, caption=image_name, use_column_width=True)
 
