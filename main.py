@@ -74,10 +74,11 @@ def uploadImage(model):
                   'Shrimp', 'Striped Red Mullet', 'Trout']
 
     if uploaded_file is not None:
-        location = st_eval.get_geolocation()
-        latitude = location["coords"]["latitude"]
-        longitude = location["coords"]["longitude"]
         with st.spinner("Predicting..."):
+            location = st_eval.get_geolocation()
+            if location is not None:
+                latitude = location["coords"]["latitude"]
+                longitude = location["coords"]["longitude"]
             image = Image.open(uploaded_file)
             image = image.resize((224, 224))
             img_array = keras.preprocessing.image.img_to_array(image)
