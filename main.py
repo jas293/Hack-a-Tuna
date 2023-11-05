@@ -49,20 +49,6 @@ def display_images_in_grid(folder_path="images/", num_columns=3):
                 image_file = image_files[i + j]
                 image_path = os.path.join(folder_path, image_file)
                 image_name = os.path.splitext(image_file)[0]
-                if image_name is "git_head_bream":
-                    image_name = "Gilt Head Bream"
-                elif image_name is "striped_red_mullet":
-                    image_name = "Striped Red Mullet"
-                elif image_name is "Sea_Bass":
-                    image_name = "Sea Bass"
-                elif image_name is "red_sea_bream":
-                    image_name = "Red Sea Bream"
-                elif image_name is "hourse_mackerel":
-                    image_name = "Hourse Mackerel"
-                elif image_name is "Red_Mullet":
-                    image_name = "Red Mullet"
-                elif image_name is "black_sea_sprat":
-                    image_name = "Black Sea Sprat"
                 columns[j].image(image_path, caption=image_name, use_column_width=True)
 
 
